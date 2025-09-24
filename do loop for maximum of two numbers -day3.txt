@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, max;
+    char choice;
+
+    do {
+        printf("Enter two numbers: ");
+        scanf("%d %d", &a, &b);
+
+        max = (a > b) ? a : b;
+        printf("Maximum is: %d\n", max);
+
+        printf("Do you want to try again? (y/n): ");
+        scanf(" %c", &choice);
+    } while (choice == 'y' || choice == 'Y');
+
+    return 0;
+}

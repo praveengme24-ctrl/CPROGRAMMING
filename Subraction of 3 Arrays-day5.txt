@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() {
+    int size;
+    printf("Enter the size of the arrays: ");
+    scanf("%d", &size);
+    int A[size], B[size], C[size], Result[size];
+    printf("Enter elements of array A:\n");
+    for(int i = 0; i < size; i++) {
+        scanf("%d", &A[i]);
+    }
+    printf("Enter elements of array B:\n");
+    for(int i = 0; i < size; i++) {
+        scanf("%d", &B[i]);
+    }
+    printf("Enter elements of array C:\n");
+    for(int i = 0; i < size; i++) {
+        scanf("%d", &C[i]);
+    }
+    for(int i = 0; i < size; i++) {
+        Result[i] = A[i] - B[i] - C[i];
+    }
+    printf("Resultant array after subtraction:\n");
+    for(int i = 0; i < size; i++) {
+        printf("%d ", Result[i]);
+    }
+    return 0;
+}
